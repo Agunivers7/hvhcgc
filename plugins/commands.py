@@ -43,7 +43,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
+                START_TXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
             reply_markup=reply_markup,
             parse_mode='html'
         )
