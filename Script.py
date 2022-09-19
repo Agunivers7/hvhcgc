@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """
-Hi, I am {}</a>, 
+Hi,{}</a>, 
 
  I'm Only Work For <a href='https://t.me/Aguniversmovie'>𝘈𝘨𝘶𝘯𝘪𝘷𝘦𝘳𝘴𝘮𝘰𝘷𝘪𝘦</a>
 
