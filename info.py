@@ -37,7 +37,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Apexporject")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-647696969'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1001683079938'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Agunivers_backup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
