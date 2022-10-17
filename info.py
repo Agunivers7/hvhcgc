@@ -14,12 +14,12 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '10651048'))
 API_HASH = environ.get('API_HASH', '37775aca7d11f450ecde375baac17fe7')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5442082144:AAH5nthnSeVlqEHZPUYHd3GPj7EzhHETETg')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5473562541:AAGiYVUx1fNiXLs_KiTKoH9pJ0fAhYXUhK0')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', '5473562541:AAGiYVUx1fNiXLs_KiTKoH9pJ0fAhYXUhK0')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/3223855cb03b204453c3e.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1323557247').split()]
