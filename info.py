@@ -12,29 +12,29 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID', '10651048'])
-API_HASH = environ['API_HASH', '37775aca7d11f450ecde375baac17fe7']
-BOT_TOKEN = environ['BOT_TOKEN', '5473562541:AAGiYVUx1fNiXLs_KiTKoH9pJ0fAhYXUhK0']
+API_ID = int(environ.get('API_ID', '10651048'))
+API_HASH = environ.get('API_HASH', '37775aca7d11f450ecde375baac17fe7')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5442082144:AAH5nthnSeVlqEHZPUYHd3GPj7EzhHETETg')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/245f4d78494f2477d19f5.jpg')).split()
+PICS = (environ.get('PICS', '5473562541:AAGiYVUx1fNiXLs_KiTKoH9pJ0fAhYXUhK0')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1323557247').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1323557247').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001609242140').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL',)
-auth_grp = environ.get('AUTH_GROUP','-647696969')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+auth_channel = environ.get('AUTH_CHANNEL')
+auth_grp = environ.get('AUTH_GROUP')
+AUTH_CHANNEL = environ.get('AUTH_CHANNEL','-1001609242140')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Aadhi:42426840@cluster0.h9rky.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Apexporject")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "zamasu")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Zamasu_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1001683079938'))
